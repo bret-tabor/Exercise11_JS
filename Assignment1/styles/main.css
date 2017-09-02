@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  width: 960px;
+}
+
+h1 {
+  border-bottom: 1px solid;
+  color: #777777;
+}
+
+h2 {
+  border-bottom: 1px dashed;
+  color: #aa0000;
+}
+
+hr {
+  clear: both;
+}
+
+.links {
+  background-color: #000;
+  color: #ffffff;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.nav-links {
+  float: left;
+}
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes colorflashspin {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.image {
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  animation-name: colorflashspin;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.main-content {
+  float: left;
+  width: 70%;
+}
+
+.side-bar {
+  background-color: #e7e7e7;
+  float: right;
+  width: 20%;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  clear: both;
+  padding: 10px;
+}
+
+.image-list2 {
+  margin: 0;
+  padding: 0;
+}
+
+.image-list2 li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.image-list2 img {
+  height: 100px;
+  width: 100px;
+}
+
+h4 {
+  text-align: center;
+}
