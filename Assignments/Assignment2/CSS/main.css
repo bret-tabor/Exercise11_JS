@@ -1,0 +1,27 @@
+body {
+font-family: Helvetica, Arial;
+margin: auto; 
+max-width: 960px; 
+}
+
+.banner {
+  background-image: url("sky.jpeg");
+  width: 960px;
+  height: 429px;
+}
+
+.banner nav {
+  float: right;
+  padding: 10px;
+}
+
+.banner nav a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header h1, h2 {
+  clear: both;
+}
