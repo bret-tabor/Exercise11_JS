@@ -7,21 +7,33 @@ function submitForm() {
     var Name = getValue('Name');
     if (Name.length === 0) {
         messages.push(' Your name is required');
+        getElm('Name').style.background = "#FF8F87";
+    } else {
+        getElm('Name').style.background = "#FFF";
     }
     //If Email is empty. Add it to the array
     var Email = getValue('Email');
     if (Email.includes('@') === false || Email.includes('.com') === false) {
         messages.push(' A valid email address is required');
+        getElm('Email').style.background = "#FF8F87";
+    } else {
+        getElm('Email').style.background = "#FFF";
     }
     // If Password is empty. Add it to the array
     var Password = getValue('Password');
     if (Password.length === 0) {
         messages.push(' A password is required');
+        getElm('Password').style.background = "#FF8F87";
+    } else {
+        getElm('Password').style.background = "#FFF";
     }
     // If Time Zone is not selected. Add it to the array
     var TimeZoneSelect = getValue('TimeZoneSelect');
     if (TimeZoneSelect.length === 0) {
         messages.push(' You must select a Time Zone');
+        getElm('TimeZoneSelect').style.background = "#FF8F87";
+    } else {
+        getElm('TimeZoneSelect').style.background = "#FFF";
     }
     //Loop through array and add messages to the innerHTML of the error-list id
     for (i = 0; i < messages.length; i++) {
