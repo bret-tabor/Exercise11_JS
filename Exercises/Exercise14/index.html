@@ -1,39 +1,41 @@
 <!doctype html>
 <html>
 
-    <head>
-        <title>Exercise14</title>
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
+<head>
+    <title>Exercise14</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
 
-    <body>
-       <section id="message">
+<body>
+    <section id="error-list" class="errors">
 
-        </section>
+    </section>
+    <form action="index.html" method="post" id="myForm">
         <section class="inputs">
-            <label for="Name">Your Name</label>
-                <input type="text" id="Name" name="Name" value="" placeholder="What's your Name?">
-            <label for="Email">Email</label>
-                <input type="email" id="Email" name="Email" value="" placeholder="What's your email address?">
-            <label for="Password">Password</label>
-                <input type="password" id="Password" name="Password" value="" placeholder="Your Password Here">
-            <label for="TimeZone">Time Zone</label>
-                <select id="TimeZone">
+            <label for="yourName">Your Name</label>
+            <input type="text" id="Name" name="Name" value="" placeholder="What's your Name?">
+            <label for="yourEmail">Email</label>
+            <input type="email" id="Email" name="Email" value="" placeholder="What's your email address?">
+            <label for="yourPassword">Password</label>
+            <input type="password" id="Password" name="Password" value="" placeholder="Your Password Here">
+            <label for="yourTimeZone">Time Zone</label>
+            <select id="TimeZoneSelect">
                         <option value="" disabled selected>Select Your Time Zone</option>
                         <option value="1">Eastern</option>
                         <option value="2">Central</option>
                         <option value="3">Mountain</option>
                         <option value="4">Pacific</option>
                     </select>
-       </section>
-         <section class="control-panel">
+        </section>
+        <section class="control-panel">
             <input type="button" value="Update Values" id="btnUpdate" />
         </section>
         <section class="Submit/Reset">
-<button type="button" id="Submit">Submit</button>
-<button type="button" id="Reset">Reset</button>
-        </section>
-        <script src="scripts/main.js"></script>
-    </body>
+            <button type="button" id="Submit">Submit</button>
+            <button type="button" id="Reset">Reset</button>
+    </form>
+    </section>
+    <script src="scripts/main.js"></script>
+</body>
 
 </html>
