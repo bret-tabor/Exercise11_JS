@@ -4,6 +4,7 @@ function submitForm() {
     var messages = [];
 
     //If Your Name is empty. Add it to the array
+   
     var Name = getValue('Name');
     if (Name.length === 0) {
         messages.push(' Your name is required');
