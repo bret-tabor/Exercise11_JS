@@ -3,6 +3,11 @@
 }
 
 body {
-    width:500px;
-    margin:20px auto;
+    width: 500px;
+    margin: 20px auto;
+}
+
+.errorBox {
+    background: #FF8F87;
+    border: 1px solid red;
 }
