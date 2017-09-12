@@ -5,9 +5,73 @@
 body {
     width: 500px;
     margin: 20px auto;
+    font-family: Tahoma, Geneva, sans-serif;
+    background: #3A405A;
+}
+
+.inputs, .control-panel, .Submit-Reset {
+    width: 250px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+input, select {
+    margin: 5px 20px 20px 20px;
+}
+
+.formDiv {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    border-radius: 10%;
+}
+
+.errors {
+    color: #FF8F87;
+    display: inline-block;
+    text-align: center;
 }
 
 .errorBox {
     background: #FF8F87;
     border: 1px solid red;
+}
+
+.Submit-Reset button {
+    margin: 0 auto;
+}
+
+label {
+    color: #FCF7F8;
+    font-weight: bold;
+}
+
+#btnUpdate, #Submit, #Reset {
+    background: #3A405A;
+    background-image: -webkit-linear-gradient(top, #3A405A, #75C5FF);
+    background-image: -moz-linear-gradient(top, #3A405A, #75C5FF);
+    background-image: -ms-linear-gradient(top, #3A405A, #75C5FF);
+    background-image: -o-linear-gradient(top, #3A405A, #75C5FF);
+    background-image: linear-gradient(to bottom, #3A405A, #75C5FF);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #FCF7F8;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+#btnUpdate:hover, #Submit:hover, #Reset:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
 }
