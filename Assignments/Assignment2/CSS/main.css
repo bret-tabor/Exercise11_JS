@@ -6,8 +6,8 @@ max-width: 960px;
 
 .banner {
   background-image: url("sky.jpeg");
-  width: 960px;
-  height: 429px;
+  height: 26.8em;
+  position: relative
 }
 
 .banner nav {
@@ -17,11 +17,55 @@ max-width: 960px;
 
 .banner nav a {
   color: #fff;
-  font-size: 12px;
   text-decoration: none;
   padding: 10px;
 }
 
-header h1, h2 {
+nav a:hover {
+  text-decoration: underline;
+}
+
+.banner h1 {
   clear: both;
+  color: #fff;
+  font-size: 46px;
+  font-weight: lighter;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.banner h2 {
+  clear: both;
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.main-content {
+  width: 70%;
+}
+.main-content h2 {
+  color: #2B3568;
+}
+
+blockquote {
+  border: 1px solid black;
+  padding: 20px;
+  width: 50%;
+}
+
+blockquote span {
+ text-align: right;
+}
+
+footer, nav {
+  font-size: 12px;
 }
