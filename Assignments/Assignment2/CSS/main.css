@@ -1,7 +1,11 @@
 body {
-font-family: Helvetica, Arial;
-margin: auto; 
-max-width: 960px; 
+  font-family: Helvetica, Arial;
+  margin: auto;
+  max-width: 960px;
+}
+
+h1, h2, a, aside {
+  color: #2B3568;
 }
 
 .banner {
@@ -35,7 +39,7 @@ nav a:hover {
   top: 40%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%)
 }
 
 .banner h2 {
@@ -46,26 +50,137 @@ nav a:hover {
   top: 55%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%)
 }
 
 .main-content {
-  width: 70%;
+  float: left;
+  width: 69%;
 }
+
 .main-content h2 {
   color: #2B3568;
 }
 
 blockquote {
   border: 1px solid black;
-  padding: 20px;
+  margin-left: 20%;
+  padding: 5%;
   width: 50%;
 }
 
 blockquote span {
- text-align: right;
+  float: right;
+  vertical-align: text-bottom;
 }
 
-footer, nav {
+.aside {
+  float: right;
+  width: 20%;
+  border-bottom: 3px solid #2B3568;
+}
+
+.Categories {
+  border-bottom: 3px solid #2B3568;
+}
+
+.Categories ul, footer ul {
+  padding-left: 0;
+}
+
+.Categories ul li, footer ul li {
+  list-style-position: inside
+}
+
+.Categories a {
+  text-decoration: none;
+}
+
+.Categories a:hover {
+  text-decoration: underline;
+}
+
+.Tags {
+  margin-bottom: 20px;
+}
+
+.Tags a {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #2B3568;
+  padding: 3px;
+  margin: 3px;
+}
+
+.Tags a:hover {
+  color: #fff;
+  background: #2B3568;
+  text-decoration: none;
+}
+
+.featured {
+  border-top: 3px solid #2B3568;
+  margin-bottom: 10px;
+}
+
+.featured img {
+  width: 189px;
+  padding: 1px;
+  border: 1px solid #2B3568;
+}
+
+footer,
+nav {
   font-size: 12px;
+}
+
+.footer {
+  clear: both;
+  float: left;
+  color: #fff;
+  background: #2B3568;
+  margin-top: 10px;
+  width: 960px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  float: left;
+  padding: 5px;
+  margin: 10px;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.news, .events {
+  margin-right: 50px;
+}
+
+.socials {
+  margin-left: 40px;
+}
+
+.socials a {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.socials a:hover {
+  color: #2B3568;
+  background: #fff;
+  text-decoration: none;
 }
