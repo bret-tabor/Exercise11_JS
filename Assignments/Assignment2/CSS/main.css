@@ -4,6 +4,10 @@ body {
   max-width: 960px;
 }
 
+.bckrnd {
+  background: #fff;
+}
+
 h1, h2, a, aside {
   color: #2B3568;
 }
