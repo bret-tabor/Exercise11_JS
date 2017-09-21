@@ -4,6 +4,10 @@ body {
   max-width: 960px;
 }
 
+.bckrnd {
+  background: #fff;
+}
+
 h1, h2, a, aside {
   color: #2B3568;
 }
@@ -54,6 +58,7 @@ nav a:hover {
 }
 
 .main-content {
+  padding-left: 15px;
   float: left;
   width: 69%;
 }
@@ -70,11 +75,12 @@ blockquote {
 }
 
 blockquote span {
-  float: right;
-  vertical-align: text-bottom;
+  display: block;
+  text-align: right;
 }
 
 .aside {
+  padding-right: 15px;
   float: right;
   width: 20%;
   border-bottom: 3px solid #2B3568;
@@ -129,8 +135,7 @@ blockquote span {
   border: 1px solid #2B3568;
 }
 
-footer,
-nav {
+footer, nav {
   font-size: 12px;
 }
 
