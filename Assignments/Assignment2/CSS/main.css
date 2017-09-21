@@ -11,7 +11,7 @@ h1, h2, a, aside {
 .banner {
   background-image: url("sky.jpeg");
   height: 26.8em;
-  position: relative
+  position: relative;
 }
 
 .banner nav {
