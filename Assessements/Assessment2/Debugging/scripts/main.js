@@ -33,7 +33,8 @@ $(function () {
 
     //This is supposed to add an event listener but it's causing an error
     //Fix it please.
-    document.getElementById('btnMake').addEventListener('click', build);
+    //document.getElementById
+    $('btnMake').on('click', build);
 
     function build() {
         var firstName = $('#firstName');
@@ -44,15 +45,15 @@ $(function () {
 
         /*invalid should add a red border around the respective input
             It will also show a hidden error message */
-        if (firstNameValue = '') {
-            lastName.addClass('invalid');
+        if (firstNameValue === '') {
+            firstName.addClass('invalid');
 
             var parentDiv = firstName.closest('.input-group');
             var errorSpan = parentDiv.find('.errors');
             errorSpan.show();
         }
 
-        if (lastNameValue = '') {
+        if (lastNameValue === '') {
             lastName.addClass('invalid');
 
             var parentDiv = lastname.closest('#input-group');
@@ -66,18 +67,18 @@ $(function () {
             so I just commented it out.
             Please fix it
         ======================================*/
-        /*
+        
         var userObject = {
-            firstName = firstName;
-            lastName = lastName;
-            fullname = function () {
-                firstname + ' ' + lastName;
-            };
-            state = stateValue;
+            firstName = firstName
+            , lastName = lastName
+            , fullname = function () {
+                return firstName.val() + ' ' + lastName.val();
+            }
+            , state = $('#state').val();
         };
 
         console.log(userObject);
-        */
+        
 
 
     }
@@ -105,7 +106,10 @@ $(function () {
     console.log(foo) // Outputs 11
 
 */
-
+function getLength(str){
+    var test = getlength('Hello World');
+    console.log(test);
+}
 
 
 
@@ -118,8 +122,14 @@ $(function () {
     console.log(foo) // Outputs 13
 
 */
-
-
+function sumArray(arr){
+    sum = 0;
+    for(var i = 0; i < arr.length ; i++){
+        sum += arr[i]
+    }
+   
+    
+console.log('-------------------------------------');
 /*
     Write a JavaScript function that converts a decimal
     into a percentage.
@@ -132,6 +142,9 @@ $(function () {
     console.log(foo2) //Outputs "50%"
 
 */
+function percentage(x){
+    return (x * 100) + "%";
+}
 
 
 /*
@@ -143,6 +156,13 @@ $(function () {
     var newD = addDays(d, 10);
     console.log(newD);  //outputs Thu Jan 11 2001 00:00:00 GMT-0600 (Central Standard Time)
 */
+function addDays(date, addDays){
+    
+    var currentDate = date.getDate();
+    var dayFromNow = currentDate + addDays;
+    return new Date(date.setDate(dayFromNow);
+}
+var d = new Date('1/1/2001');
 
 
 
