@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
 html {
-    background: url('../pictures/thebluff.jpg') no-repeat center center fixed;
+    background: url('../pictures/mainMe.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,12 +12,12 @@ body {
 }
 
 h1 {
-    color: #002626;
+    color: #EDDFD5;
 }
 
 nav a {
     text-decoration: none;
-    color: #002626;
+    color: #EDDFD5;
     font-weight: bold;
     padding: 1%;
 }
@@ -30,4 +26,18 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.5);
     border-radius: 5%;
     color: #002626;
+}
+
+p {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5%;
+    color: #002626;
+    float: left;
+    font-weight: bold;
+    margin: 10% auto;
+    padding: 1%;
+    text-align: left;
+    width: 25%;
+}
+
 }
