@@ -62,9 +62,42 @@ section {
     width: 25%
 }
 
-
 .image-gallery li:hover img {
     border: 2px solid #333;
     display: block;
     margin: 0 auto
+}
+/* 480px is a standard break point for mobil */ 
+@media screen and (max-width: 480px) {
+    header nav, footer nav, section {
+        width: auto;
+    }
+
+    nav li, a {
+        display: block;
+    }
+/* though it looked cool, I know hover doesn't work on a phone :p */
+    header a:hover {
+        color: #a00;
+        background: #fff;
+        text-decoration: none;
+    }
+/* though it looked cool, I know hover doesn't work on a phone :p */
+    footer a:hover {
+        color: #333;
+        background: #fff;
+        text-decoration: none;
+    }
+
+    nav li {
+        border: 1px solid #fff;
+    }
+/* zero padding on nav ul gets rid of surround red/grey color so that the #fff border just looks like a single line separating the links */
+    nav ul {
+        padding: 0;
+    }
+
+    .image-gallery li {
+        width: 50%;
+    }
 }

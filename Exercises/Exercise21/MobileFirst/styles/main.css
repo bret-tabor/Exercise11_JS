@@ -103,10 +103,66 @@ footer>h3 {
     margin: 0
 }
 
-footer>nav {
-}
+footer>nav {}
 
 footer>nav>a {
     padding: 0 10px;
-    display:block;
+    display: block;
+}
+
+@media screen and (min-width:960px) {
+    footer nav,
+    header nav,
+    section,
+    footer {
+        max-width: 960px;
+        margin: 0 auto
+    }
+    .main-header nav a {
+        display: inline-block;
+    }
+    .main-header nav {
+        border-radius: 25px;
+        text-align: center;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero img {
+        width: auto;
+        padding: 10px;
+    }
+    .article-list {
+        float: left;
+        width: 63%;
+    }
+    .article-list article {
+        padding: 1px 0 1px 0;
+    }
+    .article-list header,
+    .article-list p {
+        display: block;
+    }
+    .article-list article img {
+        float: left;
+        width: 50%;
+    }
+    aside {
+        float: right;
+        width: 33%;
+    }
+    .sponsors .sponsor-ads img {
+        width: 50%;
+        display: block;
+    }
+    footer {
+        text-align: center;
+    }
+    footer nav a {
+        display: inline-block;
+        float: right;
+    }
+    footer h3 {
+        float: left;
+    }
 }
