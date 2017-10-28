@@ -82,21 +82,24 @@
             </div>
             <!-- Start Form add "$(document).ready function() (" on js file -->
             <div>
-                <form>
+                <form class="container" id="needs-validation" novalidate>
                     <div class="form-group">
                         <label class ="col-form-label" for="formYourName">Name</label>
-                        <input class="form-control" type="text" id="formYourName" placeholder="Your Name">
+                        <input class="form-control" type="text" id="formYourName" placeholder="Your Name" required>
+                        <div class="invalid-feedback">Your Name is Required</div>
                     </div>
                     <div class="form-group">
                         <label class ="col-form-label" for="formEmail">Email</label>
-                        <input class="form-control" type="text" id="formEmail" placeholder="Your Email">
+                        <input class="form-control" type="text" id="formEmail" placeholder="Your Email" required>
+                        <div class="invalid-feedback">Your Email Address is Required</div>
                     </div>
                     <div class="form-group">
                         <label class ="col-form-label" for="formMessage">Message</label>
-                        <textarea class="form-control" id="formMessage" placeholder="Your Message"></textarea>
+                        <textarea class="form-control" id="formMessage" placeholder="Your Message" required></textarea>
+                        <div class="invalid-feedback">Your Message is Required</div>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary" id="btnSubmit">Go somewhere</button>
+                        <button type="submit" class="btn btn-primary" id="btnSubmit">Go somewhere</button>
                     </div>
 
                 </form>
