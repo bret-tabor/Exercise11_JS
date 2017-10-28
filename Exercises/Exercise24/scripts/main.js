@@ -2,23 +2,16 @@ $(document).ready(function () {
 
 
     var form = document.getElementById('needs-validation');
-    form.addEventListener('submit', function (event) {
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        }
-          form.classList.add('was-validated');
-          $('#btnSubmit').on('click', frmfadeOut);
-          
-                  function frmfadeOut() {
-                  $('form').fadeOut();
-                  $('#thankyou').fadeIn();
-              }
-
-    }, false);
-
-
     
+    $('#btnSubmit').on('click', function(){
 
+        if (form.checkValidity() === false) {
+        } else {
+            $('form').fadeOut('slow');
+            $('#thankyou').fadeIn('slow');
+        }
+          form.classList.add('was-validated');   
+    });
+    
 });
 
