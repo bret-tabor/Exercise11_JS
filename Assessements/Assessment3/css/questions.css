@@ -1,0 +1,32 @@
+/*
+    Q1 - Write a media query for desktop first.  The break point needs to be at 960px;
+*/
+
+@media screen and (max-width: 960px) {
+
+    }
+
+/*
+    Q2 - Write a media query for mobile first.  The break point needs to be at 720px;
+*/
+@media screen and (min-width: 720px) {
+    
+    }
+
+
+
+/*
+    Q3 - What CSS property are you having the most trouble figuring out?
+*/
+/*Answer: It's not necesarily one property, it is the flex-box properties. If
+I don't work with them for a little while I get confused about when to use which property
+to achieve the look I'm going for.*/
+
+/*
+    Q4 - What is the best CSS property and why?
+*/
+
+/* Answer: How can one choose which CSS property is best? That is situational to me.
+If I had to choose one, I'd say display. It specifies the type of box used for an
+HTML element which can have a big impact on how your website looks and plays a part
+how your site behaves as you go from mobil to tablet to desktop.*/
